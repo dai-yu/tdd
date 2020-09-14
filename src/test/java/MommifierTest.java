@@ -28,4 +28,11 @@ public class MommifierTest {
         assertEquals("ikfihof", moreThanResult);
     }
 
+    @Test
+    public void should_return_words_itself_when_covert_given_a_string_with_more_than_30_precent_vowels() {
+        VowelConverter vc = new VowelConverter();
+        String moreThanResult = vc.covert("iakfihouaf");
+        assertEquals("imommyakfihomommyumommyaf", moreThanResult);
+    }
+
 }
